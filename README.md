@@ -24,15 +24,14 @@ Execute Django admin and create details for 10 books
 ## PROGRAM
 ```
 admin.py
-
 from django.contrib import admin
-from .models import Employee,EmployeeAdmin
-admin.site.register(Employee,EmployeeAdmin)
+from.models import car,carAdmin
+admin.site.register(car,carAdmin)
 
 models.py
 from django.db import models
 from django.contrib import admin
-class car(models.Model):
+class car (models.Model):
     car_name=models.CharField(max_length=20)
     dom=models.DateField()
     color=models.CharField(max_length=20)
@@ -40,13 +39,14 @@ class car(models.Model):
     company=models.CharField(max_length=20)
 
 class carAdmin(admin.ModelAdmin):
-    list_display=["car_name","dom","color","engine_type","company"]
+    list_display=('car_name','dom','color','engine_type','company')
+
 
 ```
 
 
 ## OUTPUT
-![alt text](<Screenshot 2025-09-19 203108.png>)
+![alt text](<Screenshots/Screenshot 2025-09-23 093044.png>)
 
 
 
