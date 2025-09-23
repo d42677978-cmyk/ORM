@@ -40,13 +40,16 @@ class car (models.Model):
 
 class carAdmin(admin.ModelAdmin):
     list_display=('car_name','dom','color','engine_type','company')
-
-
 ```
 
 
 ## OUTPUT
+<<<<<<< HEAD
 ![alt text](<Screenshots/Screenshot 2025-09-23 093044.png>)
+=======
+<img width="1919" height="1070" alt="Screenshot 2025-09-22 230055" src="https://github.com/user-attachments/assets/df56aa76-ff33-42a8-b9c8-83a306140a4b" />
+
+>>>>>>> 8bc63f2a0ff50b834bc7aee3941c0ec296db6174
 
 
 
